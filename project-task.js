@@ -53,9 +53,10 @@ const todos = [
   2. Use an anonymous function as the comparison function.
   3. Sort tasks in ascending order of priority (1 = highest).
   */
-  const tasksSortedByPriority = [...todos].sort(function(a, b) {
-    return a.priority - b.priority;
-  });
+
+const tasksSortedByPriority = todos.sort(function(a, b) {
+    return a.priority - b.priority; // Sorting in ascending order based on priority
+});
   
   console.log("Sorted by Priority:");
   console.log(tasksSortedByPriority);
